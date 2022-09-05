@@ -1,0 +1,331 @@
+doctype html
+html(lang='en')
+    include includes/head
+    body
+        .all
+            include includes/link
+
+            .popup-bg#popup-bg
+                .popup
+                    .popup-img
+                        img(src='img/close-modal.svg' alt='')
+                    img.close-popup(src="img/ellipse2.svg", alt="")
+                    .popup-all
+                        .popup-all__form
+                            form(action="#")
+                                input(type="text" placeholder="Имя")
+                                input(type="tel" placeholder="Телефон")
+                                input(type="email" placeholder="Email")
+                                textarea Здравствуйте! Обращаюсь к вам по такой то теме. И тд и тп
+                                input(type="submit" value="Отправить")
+
+            //Adaptive
+            .adaptive-wrapper
+                .adaptive
+                    .adaptive-img
+                        img(src="img/cross.svg", alt="")
+                    img.menu-wrapper(src="img/ellipse.svg", alt="")
+                    .adaptive-all
+                        .adaptive-all__nav
+                            .nav-item
+                                a(href="#") О депутате
+                                span.active
+                            .nav-item
+                                a.achiev-click(href="#") Достижения
+                                span
+                            .nav-item
+                                a.helpers-click(href="#") Помощники
+                                span
+                            .nav-item
+                                a.news-click(href="#") Новости
+                                span
+                            .nav-item
+                                a.recemption-click(href="#") Приемная
+                                span
+                            .nav-item
+                                a.contact-click(href="#") Контакты
+                                span
+                        .adaptive-all__email
+                            a(href="#")
+                                .email-logo
+                                    img(src="img/email.svg", alt="")
+                                .email-text arturkarimov.ru
+                include includes/link
+
+            //Promo
+            .promo
+                .container
+                    include includes/header
+                    .promo-all
+                        .promo-all__text ЗА СИЛЬНУЮ СТРАНУ И БЛАГОПОЛУЧИЕ КАЖДОГО
+
+            //About
+            .about
+                .container
+                    .about-all
+                        .about-all__img
+                            img(src="img/about-img.png", alt="")
+                        .about-all__text
+                            .title Каримов Артур Маратович
+                            .caption Депутат фракции (депутатского объединения) "ЕДИНАЯ РОССИЯ"
+                            .desc.
+                                Артур Каримов родился 24 августа 1986 года в городе Ташкент республика Узбекистан
+                                <br><br>
+                                Окончил Московский экономический бизнес-колледж по специальности – Правовед. Европейский институт ЮСТО(СПРАВЕДЛИВОСТЬ) специальность - Юрист, Правовед
+                                <br><br>
+                                Член Общероссийской общественной организации "Офицеры России". Оказываю содействие организации «Офицеры России» в укреплении обороноспособности и правопорядка на территории Московской Области.
+                                <br><br>
+                                Ответственный от партии «Единая Россия» за реализацию проекта «Народный контроль» на территории городского округа Химки.
+                                <br><br>
+                                Коммерческий директор, управляющий юрист в юридической компании «ГАРАНТИЯ».
+                                <br><br>
+                                Постоянный участник форумов «СООБЩЕСТВО», проводимых Общественной палатой Российской Федерации. Участник, консультант-эксперт круглых столов в Общественной палате Российской Федерации.
+                                <br><br>
+                                С ноября 2020года по сентябрь 2021 года - являлся ответственным секретарем Общественной палаты г.о. Химки, членом Общественной палаты Московской области.
+                            .arrows
+                                a(href="#")
+                                    .arrow.promo-click
+                                        img(src="img/arrow1.svg", alt="")
+                                a(href="#")
+                                    .arrow.achiev-click
+                                        img(src="img/arrow2.svg", alt="") 
+
+            //Achiev
+            .achiev
+                img(src="img/achiev-flag.png", alt="")
+                .container
+                    .achiev-all
+                        .achiev-all__img
+                            img(src="img/achiev-img.png", alt="")
+                        .achiev-all__text
+                            .title ДОСТИЖЕНИЯ
+                            .desc.
+                                25.07.2020г. получил благодарственное письмо от партии «Единая Россия».
+                                <br><br>
+                                04.11.2020г. отмечен Особой благодарностью главы города Дмитрия Волошина за добровольческую и волонтерскую деятельность в условия пандемии коронавируса.
+                                <br><br>
+                                23.11.2020г. благодарственное письмо от Главы и Администрации г.о. Химки за значительный вклад в социально-экономическое развитие городского округа Химки, благодарность за оказание помощи жителям города Химки в период борьбы с пандемией коронавируса от секретаря Химкинского отделения партии «Единая Россия» Д.В. Волошина. 
+                                <br><br>
+                                Благодарственные письма от Совета депутатов и председателя Совета депутатов города Александра Дряннова, за вклад в развитие города, активную жизненную позицию и добровольческую деятельность. 
+                                <br><br>
+                                Благодарственное письмо от заместителя председателя Совета сторонников Партии «Единая Россия» в Московской области Андреевой Елены Сергеевны.
+                                <br><br>
+                                Благодарственное письмо от Депутата Государственной Думы Федерального собрания Российской Федерации И.К. Родниной за активную жизненную позицию, труд и неоценимый вклад в развитие городского округа Химки. 
+                            .arrows
+                                a(href="#")
+                                    .arrow.about-click
+                                        img(src="img/arrow3.svg", alt="")
+                                a(href="#")
+                                    .arrow.news-click
+                                        img(src="img/arrow4.svg", alt="") 
+
+            //News
+            .news
+                .container
+                    .news-all
+                        .news-all__title НОВОСТИ О ДЕПУТАТЕ И МЕРОПРИЯТИЯХ
+                        .news-all__main
+                            .main-big
+                                a(href="#")
+                                    .main-item
+                                        .main-item__img
+                                            img(src="img/item1.svg", alt="")
+                                        .main-item__desc
+                                            .title Поздравили медицинских работников с праздником!!!
+                                            .text В честь дня Медицинского работника, поздравили всех причастных с праздником и пожелали исполнения всех желаний.
+                                            .date 17.06.2022
+                            .main-small
+                                a(href="#")
+                                    .main-item
+                                        .main-item__img
+                                            img(src="img/item2.svg", alt="")
+                                        .main-item__desc
+                                            .title Молодежный форум!!!
+                                            .text Участвовал в молодежном форуме, где с учениками колледжа и других...
+                                            .date 17.06.2022
+                                a(href="#")
+                                    .main-item
+                                        .main-item__img
+                                            img(src="img/item4.svg", alt="")
+                                        .main-item__desc
+                                            .title Состоялась встреча с начальником управления потребительского рынка
+                                            .text В рамках проекта партии...
+                                            .date 14.06.2022
+                                a(href="#")
+                                    .main-item
+                                        .main-item__img
+                                            img(src="img/item3.svg", alt="")
+                                        .main-item__desc
+                                            .title День России!!!
+                                            .text Принял участие в городском мероприятии и поздравил Химчан с...
+                                            .date 17.06.2022
+                                .main-item.item-else
+                                    .main-wrapper
+                                        .main-wrapper__text Все новости
+                                        .main-wrapper__arrow
+                                            img.linkArrow-two(src="img/arrow4.svg", alt="")
+                        //Swiper
+                        .swiper
+                            .swiper-wrapper
+                                .swiper-slide
+                                    a(href="#")
+                                        .main-item
+                                            .main-item__img
+                                                img(src="img/item1.svg", alt="")
+                                            .main-item__desc
+                                                .title Поздравили медицинских работников с праздником!!!
+                                                .text В честь дня Медицинского работника, поздравили всех причастных с праздником и пожелали исполнения всех желаний.
+                                                .date 17.06.2022
+                                .swiper-slide
+                                    a(href="#")
+                                        .main-item
+                                            .main-item__img
+                                                img(src="img/item2-2.svg", alt="")
+                                            .main-item__desc
+                                                .title Молодежный форум!!!
+                                                .text Участвовал в молодежном форуме, где с учениками колледжа и других образовательных учреждений пообщались на тему "Предпринимательство"
+                                                .date 17.06.2022
+                                .swiper-slide
+                                    a(href="#")
+                                        .main-item
+                                            .main-item__img
+                                                img(src="img/item4.svg", alt="")
+                                            .main-item__desc
+                                                .title Состоялась встреча с начальником управления потребительского рынка
+                                                .text В рамках проекта партии...
+                                                .date 14.06.2022
+                                .swiper-slide
+                                    a(href="#")
+                                        .main-item
+                                            .main-item__img
+                                                img(src="img/item3.svg", alt="")
+                                            .main-item__desc
+                                                .title День России!!!
+                                                .text Принял участие в городском мероприятии и поздравил Химчан с...
+                                                .date 17.06.2022
+                            .buttons
+                                .buttons-prev
+                                    img(src="img/arrow1.svg", alt="")
+                                .buttons-next
+                                    img(src="img/arrow1.svg", alt="")
+
+            //Helpers
+            .helpers
+                .container
+                    .helpers-all
+                        .helpers-all__title ПОМОЩНИКИ ДЕПУТАТА
+                        .helpers-all__main
+                            .main-item
+                                img(src="img/logo.svg", alt="")
+                                .main-item__top
+                                    img(src="img/helper.png", alt="")
+                                .main-item__desc
+                                    .title Коняев Владимир
+                                    .socials
+                                        .socials-item
+                                            a(href="#")
+                                                img(src="img/vk.svg", alt="")
+                                        .socials-item
+                                            a(href="#")
+                                                img(src="img/ok.svg", alt="")
+                                        .socials-item
+                                            a(href="#")
+                                                img(src="img/telegram.svg", alt="")
+                                        .socials-item
+                                            a(href="#")
+                                                img(src="img/facebook.svg", alt="")
+                            .main-item
+                                img(src="img/logo.svg", alt="")
+                                .main-item__top
+                                    img(src="img/helper.png", alt="")
+                                .main-item__desc
+                                    .title Сенцов Александр
+                                    .socials
+                                        .socials-item
+                                            a(href="#")
+                                                img(src="img/vk.svg", alt="")
+                                        .socials-item
+                                            a(href="#")
+                                                img(src="img/ok.svg", alt="")
+                                        .socials-item
+                                            a(href="#")
+                                                img(src="img/telegram.svg", alt="")
+                                        .socials-item
+                                            a(href="#")
+                                                img(src="img/facebook.svg", alt="")
+                            .main-item
+                                img(src="img/logo.svg", alt="")
+                                .main-item__top
+                                    img(src="img/helper.png", alt="")
+                                .main-item__desc
+                                    .title Истяков Андрей
+                                    .socials
+                                        .socials-item
+                                            a(href="#")
+                                                img(src="img/vk.svg", alt="")
+                                        .socials-item
+                                            a(href="#")
+                                                img(src="img/ok.svg", alt="")
+                                        .socials-item
+                                            a(href="#")
+                                                img(src="img/telegram.svg", alt="")
+                                        .socials-item
+                                            a(href="#")
+                                                img(src="img/facebook.svg", alt="")
+
+            
+            //Recemption
+            .recemption
+                img(src="img/recemption-flag.png", alt="")
+                .container
+                    .recemption-all
+                        .recemption-all__title ПРИЕМНАЯ
+                        .recemption-all__main
+                            .main-img
+                                img(src="img/recemption-img.png", alt="")
+                            .main-text
+                                .main-text__title Каримов Артур Маратович
+                                .main-text__desc.
+                                    Является одним из организаторов акции "День бесплатной юридической помощи для граждан города Химки", в которой на регулярной основе принимают участие более 150 химчан и более 50 предпринимателей города.
+                                    <br><br>
+                                    Активно принимает участие в юридической поддержки жителей города а так же в поддержке предпринимательства в городском округе Химки, лично оказал правовую поддержку более 150 химчанам по личным вопросам и более 50 предпринимателям в сфере права.
+                                .main-text__online
+                                    .text Так же работает онлайн
+                                    .button.click-modal Обращение
+
+            
+            //Contact
+            .contact
+                .container
+                    .contact-all
+                        .contact-all__title КОНТАКТЫ
+                        .contact-all__main
+                            iframe(src='https://yandex.ru/map-widget/v1/?um=constructor%3A432bdf824dbaac74c67ef94c740decfe186d8820d41be340278b1df5cca5ae5f&source=constructor' width='1296' height='652' frameborder='0')
+                            .main-card
+                                img(src="img/logo.svg", alt="")
+                                .main-card__img
+                                    img(src="img/contact-img.png", alt="")
+                                .main-card__title Каримов Артур Маратович
+                                .main-card__email
+                                    a(href="#")
+                                        .email-logo
+                                            img(src="img/email.svg", alt="")
+                                        .email-text arturkarimov.ru
+                                .main-card__socials
+                                    .socials-item
+                                        a(href="#")
+                                            img(src="img/vk.svg", alt="")
+                                    .socials-item
+                                        a(href="#")
+                                            img(src="img/ok.svg", alt="")
+                                    .socials-item
+                                        a(href="#")
+                                            img(src="img/telegram.svg", alt="")
+                                    .socials-item
+                                        a(href="#")
+                                            img(src="img/facebook.svg", alt="")
+
+
+            include includes/footer
+
+        include includes/scripts
